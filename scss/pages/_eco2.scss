@@ -1,0 +1,51 @@
+
+.titulo__eco{
+    color: $secondary;
+    text-align: center;
+    font-size: 4rem;
+}     
+
+
+/*CajasEco*/
+#reciclaje{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: $ancho-1 + 160px;
+    height: $alto-3 * 2;
+    background:$secondary;
+    padding: 30px;
+    border: $border-sm solid;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+            &{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr)
+         
+        }
+                @each $reciclaje__plan in reciclaje__plan {
+                    ##{$reciclaje__plan}{
+                        background-color: $black;
+                        color: $marfil;
+                    }         
+                }
+                
+                &__plan{
+                    width: $ancho-3 - 200px;
+                    height: $alto-1 + $alto-2 + 20px;
+                    padding: 40px;  
+                    display: inline-block;
+                    text-align: center;        
+                                        
+                    .reciclaje__plan__item1{
+                        color: $turquoise;
+                        font-size: .8em;
+                        text-align: center;
+                    }
+                        .reciclaje__plan__item1__texto{
+                        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                        font-size: small;    
+                        text-align:start;
+                    }
+                
+                            }
+                        }            

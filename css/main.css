@@ -1,0 +1,983 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Roboto:wght@300&display=swap');
+
+/* Estilo del menu Inicio */
+    *{
+        padding:0;
+        margin:0;
+        box-sizing: border-box;
+    }
+
+    html{
+        font-size: 62.5%;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    ul, ol {
+        list-style-type: none;
+        padding: 0;
+    }
+    a {
+        text-decoration: none; 
+        text-decoration: inherit;  
+    }
+    li a{
+          text-decoration: inherit; 
+    }
+    /*Header*/
+    header{
+        width: 100%;
+        height: auto;
+    }
+    .Navegacion {
+        font-size: 0;
+        padding: 1rem 3rem;
+    }
+    .Navegacion .logo{
+        display: inline-block;
+        width: 20%;
+        padding: 2rem 0; 
+    }
+    .Navegacion .logo img {
+        max-width: 100%;
+        max-height: 170px;
+    }
+
+    .Navegacion .Menu{
+        height: 100%;
+        font-size: 16px;
+        width: 80%;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .Navegacion .Menu >li{
+       display: inline-block;
+       margin: 0.9rem 1rem;
+       position: relative;
+     }
+
+     .Navegacion .Menu > li > a{
+         display: block;
+         color: #48C9B0;
+         font-size: 1.4rem;
+         transition: ease 0.3s;
+         padding: 1rem 1.5rem;
+         border-radius: 1rem;
+         background-color: #2b2b2b;
+         
+
+     }
+
+     .Navegacion .Menu > li:hover > a{
+      background-color: #1B4D3E;    
+      color: gold;
+      
+    }
+
+
+    .Navegacion .Menu .Submenu{         
+        color: rgb(145, 170, 238);
+        display: none;
+        font-size: 12px;
+        position: absolute;
+        padding: 0.6 0.3rem;
+        min-width: 100px;
+        text-align: left;
+    }
+    
+    .Navegacion .Menu > li:hover > .Submenu{
+        display: block;}
+
+    .Navegacion .Menu > li > .Submenu >li >a {
+            width: 99px;
+        }    
+
+    .Navegacion .Menu > li > .Submenu >li >a {
+        display: block;
+        padding: 1rem 1.5rem;
+        width: 100%;
+        color:#48C9B0;
+        border-radius: 0.9rem;
+
+    }
+        
+    .Navegacion .Menu > li > .Submenu >li:hover >a {
+       background-color: #1B4D3E;
+       color: cornflowerblue;
+    }
+         
+     /* Estilo del menu cierre */
+
+
+    /*FlexboxEnPaginaPrincipal*/
+    
+    body.julio{
+     
+        min-height: 150vh;
+          
+    }
+
+    #PrincipalP.Portada{
+        height: 900px;
+        max-width: 1280px;
+        margin: 0 auto;
+        background-image: linear-gradient(to left, #0f2e2a, #182c1f, #222a16, #2b2611, #332112, #332113, #332014, #332015, #2d2315, #282618, #23281d, #212922);
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 4fr;
+        grid-template-rows: 30rem 30rem;
+        gap: 1rem;    
+    }
+    
+    .Uno{
+        grid-column: 1/4;
+        text-align: center;
+        display: grid;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    #PrincipalP.Portada .Uno{
+        font-style: italic;
+        font-size: 2em;
+        color: honeydew;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+
+    #PrincipalP .img-left{
+        background-image: url("../media/img/pprincipal3.jpg");
+        background-size: cover;
+    }
+
+    #PrincipalP .img-right{
+        background-image: url("../media/img/pprincipal2.jpg");
+        background-size: cover;
+    }
+  
+    #PrincipalP .img-top{
+        background-image: url("../media/img/pprincipal5.jpg");
+        background-size: cover;
+    }
+    
+    #PrincipalP .img-bottom{
+        grid-column: 1/4;
+        background-image: url("../media/img/moconaperfil.jpg");
+        background-size: cover;
+
+    }
+    
+    @media screen  and (max-width){}
+        
+  
+
+    
+
+
+     /*Principalslide*
+    .slider {
+        width: 60%;
+        margin: auto;
+    }
+    .slider ul {
+        width: 400%;
+        display: flex;
+        padding: 0;
+
+        animation: cambio 20s infinite alternate;
+        animation-timing-function: ease-in;
+    }
+
+    .slider li {
+        width: 100%;
+        list-style: none;
+    }
+    .slider img {
+        width: 100%;
+    }
+/* TimpoDuracionSlider*    
+    
+     @keyframes cambio {
+         0% { margin-left: 0;}
+        20% { margin-left: 0;}
+
+        25% {margin-left: -100%;}
+        45% { margin-left:-100%;}
+
+        50% {margin-left: -200%;}
+        75% { margin-left:-200%;}
+
+        80% {margin-left: -300%;}
+        100% {margin-left: -300%;}        
+        }
+/*EstiloQuinesSomosBox*/  
+
+
+/*CaracteristicasGeneralesDeQuienesSomos*/
+body.Misiones{
+    
+    box-sizing: border-box;
+   
+}
+
+.gral{
+    display: flex;
+    display: inline-block;
+}
+
+div#general{
+    width: 1300px;
+    height: 330px;
+    padding-top: 50px;
+    margin: 25px 25px 25px 25px; 
+    background-color: rgb(11, 177, 163);
+}
+
+.Video1 {
+    width: 1200px;
+    margin: 50px 50px 50px 30px; 
+    padding-top: 10px;
+}
+
+/*TituloQuienesSomos*/
+h1 {    
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 3em;
+    color: #70e8a6;
+}
+
+/*Caja1QuienesSomos*/
+div#texto1{
+     float: left;
+     width: 550px; 
+     height: 250px;
+     padding: 20px;
+     background-color:rgba(4, 145, 27, 0.897);
+     box-sizing: border-box;
+     border-radius: 35px 0px 35px 0px;
+    -moz-border-radius: 35px 0px 35px 0px;
+    -webkit-border-radius: 35px 0px 35px 0px;
+    border: 2px solid #12be77;
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    text-align: justify;
+}
+
+/*Caja2QuienesSomos*/
+div#texto2{
+    float: right;
+    width: 550px; 
+    height: 250px;
+    padding: 20px;
+    background-color: rgba(4, 145, 27, 0.897);
+    box-sizing: border-box ;
+    border-radius: 35px 0px 35px 0px;
+    -moz-border-radius: 35px 0px 35px 0px;
+    -webkit-border-radius: 35px 0px 35px 0px;
+    border: 2px solid #5878ca;
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    text-align: justify;
+}
+/*Alineaciónvideo*/
+
+div#Video {
+    text-align: center;
+}
+
+/*CaracteristicasDelBloqueCabañas*/
+.h1cabañas{
+    margin-top: 35px;
+    margin-bottom: 20px;
+    font-size: 5em;
+    color: rgb(202, 122, 17);
+}
+
+.fondo{
+    background-image: url(../media/img/273057628.jpg);
+    background-size: 100%;
+    text-align: auto;
+}
+
+
+/*Caja1Cabañas*/
+div#cabaña1{
+    float: left;
+    width: 550px; 
+    height: 250px;
+    padding: 20px;
+    background-image: linear-gradient(to left bottom, #8289bc, #4a80ab, #00758f, #00676a, #005644, #005438, #005229, #035018, #055f25, #066e33, #057e41, #008e50);
+    box-sizing: border-box;
+    border-radius: 35px 0px 35px 0px;
+   -moz-border-radius: 35px 0px 35px 0px;
+   -webkit-border-radius: 35px 0px 35px 0px;
+   border: 2px solid #12be77;
+   color: black;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-size: 14px;
+   text-align: justify;}
+   
+/*Caja1Cabañas*/
+div.carousel-inner{
+    float: right;
+    width: 550px; 
+    height: 250px;
+    padding: 20px;
+    background-color: #bdb49d;
+    box-sizing: border-box;
+    border-radius: 35px 0px 35px 0px;
+   -moz-border-radius: 35px 0px 35px 0px;
+   -webkit-border-radius: 35px 0px 35px 0px;
+   border: 2px solid #12be77;
+   color: black;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+   text-align: justify;
+   transform: rotate (45deg);
+
+}   
+
+
+img{
+    width: 100px;
+    height: 200px;
+}
+
+
+#carousel-inner2{
+    float: left;
+    margin-left: 40px;
+}
+
+
+    
+   /*Caja2Cabañas*/
+div#cabaña2{
+    float: left;
+    width: 550px; 
+    height: 250px;
+    padding: 20px;
+    background-image: linear-gradient(to left bottom, #8289bc, #4a80ab, #00758f, #00676a, #005644, #005438, #005229, #035018, #055f25, #066e33, #057e41, #008e50);
+    box-sizing: border-box;
+    border-radius: 35px 0px 35px 0px;
+   -moz-border-radius: 35px 0px 35px 0px;
+   -webkit-border-radius: 35px 0px 35px 0px;
+   border: 2px solid #12be77;
+   color: black;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-size: 14px;
+   text-align: justify;}   
+
+   /*Caja2Cabañas*/
+div#slidercabaña2{
+    float: left;
+    width: 550px; 
+    height: 250px;
+    padding: 20px;
+    background-color:#a3e4d7;
+    box-sizing: border-box;
+    border-radius: 35px 0px 35px 0px;
+   -moz-border-radius: 35px 0px 35px 0px;
+   -webkit-border-radius: 35px 0px 35px 0px;
+   border: 2px solid #12be77;
+     text-align: justify;}   
+
+   div.slidercabaña2{
+    width: 10px;
+    margin: auto;
+}
+
+.slidercabaña2 img {
+    width: 100%;
+}
+
+    /*Caja3Cabañas*/
+div#cabaña3{
+    float: left;
+    width: 550px; 
+    height: 250px;
+    padding: 20px;
+    background-image: linear-gradient(to left bottom, #8289bc, #4a80ab, #00758f, #00676a, #005644, #005438, #005229, #035018, #055f25, #066e33, #057e41, #008e50);
+    box-sizing: border-box;
+    border-radius: 35px 0px 35px 0px;
+   -moz-border-radius: 35px 0px 35px 0px;
+   -webkit-border-radius: 35px 0px 35px 0px;
+   border: 2px solid #12be77;
+   color: black;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-size: 14px;
+   text-align: justify;}   
+
+
+   /*Caja3Cabañas*/
+   div#slidercabaña3{
+    float: right;
+    width: 550px; 
+    height: 250px;
+    padding: 20px;
+    background-color:#a3e4d7;
+    box-sizing: border-box;
+    border-radius: 35px 0px 35px 0px;
+   -moz-border-radius: 35px 0px 35px 0px;
+   -webkit-border-radius: 35px 0px 35px 0px;
+   border: 2px solid #12be77;}
+   
+div.slidercabaña3{
+    width: 10px;
+    margin: auto;
+}
+div.slidercabaña3 ul {
+    width: 10x;
+    display: flex;
+    padding: 0;
+
+    animation: cambio 20s infinite alternate;
+    animation-timing-function: ease-in;
+}
+
+.slidercabaña3 li {
+    width: 60%;
+    list-style: none;
+}
+.slidercabaña3 img {
+    width: 100%;
+}
+
+div.carousel-inner{
+    float: inherit;
+}
+
+.footer-col{
+    width: 50%;
+    margin: auto;
+}
+/* TimpoDuracionSlider*    
+
+ @keyframes cambio {
+     0% { margin-left: 0;}
+    20% { margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% { margin-left:-100%;}
+
+    50% {margin-left: -200%;}
+    75% { margin-left:-200%;}
+
+    80% {margin-left: -300%;}
+    100% {margin-left: -300%;}        
+    }
+
+
+}      
+
+
+
+/* Estilo tabla que tan cerca estamos Inicio*/
+caption{
+        font-weight: bolder;
+    }
+table{
+    text-align: center;
+    border: 1px solid #434343;
+    width: 500px;
+    border-collapse: collapse;
+}
+table tr:hover{
+    background: #ccc;
+}
+table td:hover{
+    background: rgb(40, 190, 190);
+}
+
+td{
+    border:1px solid #434343;
+    padding:15px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #bdd1c3;
+  }
+  tbody tr:nth-child(even) {
+    background-color: #939e94;
+  }
+  
+thead tr th {
+     padding:25px;
+     background-image: url(../media/img/arbol.jpg);
+  }
+
+tfoot {
+    font-weight: bolder;  
+    padding:25px;
+    background-image: url(../media/img/arbol.jpg);
+  }
+/* Estilo tabla que tan cerca estamos Cierre*/
+
+
+
+/* EstiloFooter*/
+.container{
+    max-width: 1000px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    align-self:flex-end;
+}
+
+.footer{
+    width: 100%;
+    background-color: grey;
+    padding: 2rem 1rem;
+   
+   }
+
+.footer-col{
+    width: 40%;
+    padding: 0 10px;
+}   
+.footer-col{
+    font-size: 15px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    font-weight: 200;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+  
+}
+
+.footer-col h4::before{
+    content: '';
+    position:absolute;
+    left:0;
+    bottom: -10px;
+    height: 2px;
+    box-sizing:0 ;
+}
+
+
+ul.redes{
+    list-style: none;
+}
+   
+.footer-col ul li{
+    margin-bottom: 8px;
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col .redes-sociales a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0 10px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+
+
+ /*ColoresDeRedesSociales*/
+.footer-col .redes-sociales a
+{
+    color: #24262b;
+    background-color:lavender;
+    
+}
+
+@media (max-width: 767px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 574px){
+    .footer-col{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+/*Se debe corregir el footer*/
+
+/*EstiloFormulariodeReservas*/
+#bg-image{
+    background-image: url(/media/img/El-Soberbio-Misiones-Argentina.jpg);    
+}
+
+
+
+#Reserva{ 
+    min-height: 100vh; 
+    font-size: 1.2em;
+    color:  ivory;   
+}
+
+#Reserva2{
+      max-width: 240vh;
+      height: 100vh;
+     
+      font-size: 1.2em;
+      font-weight: bold;
+    
+      background-size: 100%;
+      
+          
+}
+
+.One{
+    margin-top: 30px;
+    margin: 30px;    
+}
+
+.Two{
+    margin: 30px;
+}
+
+.Three{
+    margin: 30px;
+}
+
+.Four{
+    margin-top: 10px;
+    margin: 30px;
+}
+
+.Five{
+    margin: 30px;
+    text-align: center;
+}
+
+.Six{
+    margin: 30px;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/*EstiloFormulariodeReservasCierre*/
+
+/*EstiloQueTanCercaEstamos*/
+#tabla .distancia{
+   padding:0;
+   margin: 0, auto;
+ 
+   }
+
+
+/*EliminacionEstilosHojaEco*/
+
+   h1{
+    text-align: center;
+}
+
+/*CajasEco*/
+div#Reciclaje{
+    width: 1160px;
+    height: 990px;
+    background: #12be77;
+    margin: 70px 100px;
+    padding: 30px;
+    border: 10px solid;
+    display: flex;
+    text-align: center;
+    position: relative;
+    font-size: 13px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    
+
+}
+div#Plan{
+    width: 200px;
+    height: 420px;
+    background: #2b6992;
+    position: absolute;
+    top: 80px;
+    bottom: 70px;
+    float: left;
+    padding: 10px;
+    text-align: center;
+
+}
+
+div#Aguas{
+    width: 200px;
+    height: 430px;
+    background: #db952b;
+    position: absolute;
+    display: inline-block;
+    top: 80px;;
+    bottom: 70px;
+    left:470px;
+    padding: 10px;
+    text-align: center;
+  
+
+}
+div#Reciclar{
+    width: 200px;
+    height: 430px;
+    background: #28ec16;
+    position: absolute;
+    top: 80px;
+    bottom: 70px;
+    left:690px;
+    padding: 10px;
+    text-align: center;   
+    display: inline-block
+
+}
+div#Limpieza{
+    width: 200px;
+    height: 430px;
+    background: #ffffff;
+    position: absolute;
+    top: 80px;;
+    left: 910px;   
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+
+}
+div#Respeto{
+    width: 200px;
+    height: 430px;
+    background: #5f6d67;
+    top: 520px;
+    display: inline-block;
+    position: absolute;
+    bottom: 80px;
+    padding: 10px;
+    text-align: center;
+
+}
+
+div#Fuego{
+    width: 200px;
+    height: 430px;
+    background: #e42222;
+    margin: 20px 50px;
+    top: 500px;
+    display: inline-block;
+    position: absolute;
+    left: 640px;
+    padding: 10px;
+    text-align: center;
+
+
+    
+}
+div#Agua{
+    width: 200px;
+    height: 430px;
+    background: #039c8f;
+    margin: 20px 50px;
+    top: 500px;
+    left: 200px;
+    display: inline-block;
+    position: absolute;
+    padding: 10px;
+    text-align: center;
+
+}
+div#Piscina{
+    width: 200px;
+    height: 430px;
+    background: #76f8ed;
+    margin: 20px 50px;
+    left: 420px;
+    top: 500px;
+    display: inline-block;
+    position: absolute;
+    padding: 10px;
+    text-align: center;
+    
+    
+
+}
+div#Diseño{
+    width: 200px;
+    height: 430px;
+    background: #f0f331;
+    margin: 20px 50px;  
+    position: absolute;
+    top: 60px;;
+    left: 200px;    
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+
+}
+div#Electrodomesticos{
+    width: 200px;
+    height: 430px;
+    background: #5f6d67;
+    margin: 20px 50px;
+    left: 860px;
+    top: 500px;
+    display: inline-block;
+    position: absolute;
+    padding: 10px;
+    text-align: center;
+
+}
+
+/*EstilosContacto*/
+#Contactos{
+    background: url(../media/img/ruta.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-size: 14px;
+    font-weight: bold;
+    color: #f1f52e ;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#Contactos {
+    padding:0;
+    margin: 0, auto;
+    }
+
+    div#Ruta{
+        width: 900px;
+        height: 600px;
+        margin: 40px 180px;
+        padding: 30px;
+        display: inline-block;
+        position: relative;
+        font-size: 70px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+/*CierreEstilosContacto*/
+
+/*EstilosActividades*/
+#Actividades{
+    background: url(../media/img/selva2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-size: 14px;
+    font-weight: bold;
+    color: #f1f52e ;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#Jungla {
+    padding:0;
+    margin: 0, auto;
+    }
+
+    div#Jungla{
+        width: 900px;
+        height: 600px;
+        margin: 40px 180px;
+        padding: 30px;
+        display: inline-block;
+        position: relative;
+        font-size: 70px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    /*Responsive*/
+
+   @media (max-width: 1030px){
+               #PrincipalP{
+            font-size:  0.8rem; 
+        }
+    }
+
+    @media  (max-width: 780px)
+        {
+        #PrincipalP{
+            font-size:  0.6rem; 
+        }  
+      }
+
+    @media (max-width: 260px){
+        #PrincipalP{
+            grid-template-columns: 1fr; 
+            grid-template-rows: repeat (3, 40rem);
+        }
+    }
+
+    @media (max-width: 100px){
+        #PrincipalP .Uno{
+            grid-column: 1fr;
+            flex-direction: repeat (3, 40rem);
+        }
+    }
+
+
+    /*ERROR404 ESTILOS*/
+  
+    body#E404{
+        margin: 0px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        background-color: black;
+    }
+
+    h1.animatedbounce{
+        margin: 0px;
+        color: red;
+        font-size: 60px;
+       
+    }
+
+    section.ErrorMessage{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100%;
+      
+    }
+
+    section.ErrorMessageContainer{
+        text-align: center;
+        
+    }
+
+    section.Huston{
+        width: 83%;
+        height: 43%;
+       background-image: url(../media/img/huston.jpg);
+       background-repeat: no-repeat;
+       text-align: center;
+    }
+
+    p.P404 a{
+        font-size: 20px;
+        color: white;
+    }
+
+
+    h1.animatedbounce {
+        animation-duration: 2.5s;
+        animation-fill-mode: both;
+        animation-iteration-count: infinite;
+    }
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40%{transform: translateY(-30px);}
+    60%{ transform: translateY(-15px);}
+}
+
+.animatedbounce{
+    animation-name: bounce;
+}
+    
