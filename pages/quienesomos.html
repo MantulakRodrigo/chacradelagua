@@ -21,17 +21,14 @@
                         <li><a href="./pages/quienesomos.html">Quienes Somos</a></li>
                         <li><a href="./pages/eco.html">Eco</a></li>
                         <li><a href="./pages/cabañas.html">Cabañas</a></li>
-                        <li><a href="./pages/actividades.html">Actividades</a></li>
                         <li><a href="">Disponibilidades</a>
                             <ul class="Submenu">
                             <li><a href="./pages/haztureserva.html">Haz tu Reserva</a></li>
-                            <li><a href="./pages/contacto.html">Contacto</a></li>
                             </ul>     
                         </li>                            
                         <li><a href="">Distancias</a>
                             <ul class="Submenu">
                                  <li><a href="./pages/elviaje.html">El Viaje</a></li>
-                                 <li><a href="./pages/quetancercaestamos.html">Que tan cerca estamos</a></li>
                             </ul>
                         </li> 
                 </ul>
@@ -39,7 +36,9 @@
 </header>  
     </header>  
 <body class="Misiones">
-    <h1> Quienes Somos</h1>
+    <div>
+    <h1 class="QS"> Quienes Somos</h1>
+    </div>
     <section class="Gral">
         <div id="General" >
             <div id= "Texto1" >
@@ -50,6 +49,7 @@
                 </p>    
             </div>             
             <div id= "Texto2" >
+                     <p>
                 Destacado por poseer un clima sub-tropical, en la selva hay 4 estaciones.           
                 El invierno dura poco, pero cuando aparece puede llegar a helar. A veces llueven días seguidos y no sale el sol, por lo que la humedad se hace sentir. <br/> 
                 
@@ -58,7 +58,8 @@
                 En verano las noches son frescas y permiten descansar del sol que brilla durante el día sin necesidad de aire acondicionado.           
                 En invierno anochece hacia las 16:30 hs (en el solsticio de invierno) y en verano hacia las 19:30 hs (en el solsticio de verano).<br/> 
                 
-                Las tormentas repenitnas de corta y larga duración, son indispensables para mantener la humedad en la selva.<br/>               
+                Las tormentas repenitnas de corta y larga duración, son indispensables para mantener la humedad en la selva.<br/> 
+                     </p>              
             </div>  
         </div>
     </section>  
@@ -68,39 +69,45 @@
         </div>
     </section>    
     <section class="Gral">
-        <h2>Actividades</h2>
+        <h2 class="Act">Actividades</h2>
         <div id="General" >
             <div class="col-md-12" >
                 <section class=Texto3>
                 <p>En Chacra del Agua ofrecemos actividades recreativas, donde podrás reconectarte con la naturaleza, disfrutar de trakkings a través de la exhuberante selva misionera, de paseos en kayak en los brazos del Rio Uruguay. La fauna es muy nutrida, tucanes, ocelotes, yaguaretés, monos, aguiluchos, se destacan entre las especies que merodean estas tierras<br/>
 
-                 Nos encontramos a pocos kilómetros del Parque Provincial Moconá. Podá disfrutar en el corazón del parque, los Saltos del Moconá conforman un espectáculo único en el mundo, producto de una falla geológica sobre el río Uruguay, entre las desembocaduras de los arroyos Pepirí Guazú y Yabotí .<br/> 
+                 Nos encontramos a pocos kilómetros del Parque Provincial Moconá, donde podrá disfrutar en el corazón del parque los Saltos del Moconá que conforman un espectáculo único en el mundo, producto de una falla geológica sobre el río Uruguay, entre las desembocaduras de los arroyos Pepirí Guazú y Yabotí .<br/> 
                 </p>    
             </div>  
         </section>   
         <main class="Container2">
-        <div class="col-md-6 justify-content-center">       
+        <div class="row justify-content-center">    
+        <div class="col-4">   
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner2">
               <div class="carousel-item active">
-                <img src="../media/img/pprincipal5.jpg" class="d-block w-100" alt="...">
+                <img class="QM" src="../media/img/Aventura 1.JPG" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="../media/img/pprincipal6.jpg" class="d-block w-100" alt="...">
+                <img class="QM" src="../media/img/Aventura2.JPG" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="../media/img/pprincipal3.jpg" class="d-block w-100" alt="...">
+                <img class="QM" src="../media/img/Aventura3.JPG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img class="QM" src="../media/img/Aventura4.JPG" class="d-block w-100" alt="...">
               </div>
           </div>
         </div>
     </div> 
+</div>    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </main>
 </body>        
         <hr style="height: 8px;">  
         <footer class="footer">
-            <div class="container">
+            <div class="ContainerF">
                 <div class="row">
+                    <div class="col-md-5">
                 <div class="footer-col">
                     <h4>Chacra Del Agua</h4>
                     <ul class="redes">
@@ -108,14 +115,18 @@
                         <li> <a href="#">Politicas de Privacidad</a></li>
                     </ul>
                 </div>
+            </div>   
+            <div class="col-md-7">
                 <div class="footer-col">
                     <h4>Siguenos</h4>
                     <div class="redes-sociales">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
+            </div>   
             </div>
           </section>
         </footer>      

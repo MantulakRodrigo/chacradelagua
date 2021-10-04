@@ -32,6 +32,7 @@
     .Navegacion {
         font-size: 0;
         padding: 1rem 3rem;
+        background-color: black;
     }
     .Navegacion .logo{
         display: inline-block;
@@ -66,7 +67,6 @@
          border-radius: 1rem;
          background-color: #2b2b2b;
          
-
      }
 
      .Navegacion .Menu > li:hover > a{
@@ -118,11 +118,26 @@
           
     }
 
+    .bg-2{
+        background: inherit;
+      }
+    
+    .t-stroke-shadow {
+        font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+        font-size: 50px;
+        padding: 80px 50px;
+        text-align: center;
+        text-transform: uppercase;
+        text-rendering: optimizeLegibility;
+        color: #1B4D3E;
+        text-shadow: -2px 2px #ffffff, -2px -2px #ffffff, 2px -2px #ffffff, 2px 2px #f3f3f2, 5px 5px #324b49;
+    }
+    
     #PrincipalP.Portada{
         height: 900px;
         max-width: 1280px;
         margin: 0 auto;
-        background-image: linear-gradient(to left, #0f2e2a, #182c1f, #222a16, #2b2611, #332112, #332113, #332014, #332015, #2d2315, #282618, #23281d, #212922);
+        background-image: radial-gradient(circle, #2d302d, #292b28, #262623, #22221f, #1e1d1b, #1b1a18, #181715, #141312, #100f0f, #0c0b0a, #060505, #000000);
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 4fr;
@@ -172,54 +187,13 @@
         
   
 
-    
-
-
-     /*Principalslide*
-    .slider {
-        width: 60%;
-        margin: auto;
-    }
-    .slider ul {
-        width: 400%;
-        display: flex;
-        padding: 0;
-
-        animation: cambio 20s infinite alternate;
-        animation-timing-function: ease-in;
-    }
-
-    .slider li {
-        width: 100%;
-        list-style: none;
-    }
-    .slider img {
-        width: 100%;
-    }
-/* TimpoDuracionSlider*    
-    
-     @keyframes cambio {
-         0% { margin-left: 0;}
-        20% { margin-left: 0;}
-
-        25% {margin-left: -100%;}
-        45% { margin-left:-100%;}
-
-        50% {margin-left: -200%;}
-        75% { margin-left:-200%;}
-
-        80% {margin-left: -300%;}
-        100% {margin-left: -300%;}        
-        }
-/*EstiloQuinesSomosBox*/  
-
-
 /*CaracteristicasGeneralesDeQuienesSomos*/
 
 body.Misiones{
     
     box-sizing: border-box;
-    background-image: url(../media/img/selva5.jpg);
+    background-image: radial-gradient(circle, #2d302d, #292b28, #262623, #22221f, #1e1d1b, #1b1a18, #181715, #141312, #100f0f, #0c0b0a, #060505, #000000);
+    background-repeat: none;
    
 }
 
@@ -229,24 +203,25 @@ body.Misiones{
 }
 
 div#General{
-    width: 1300px;
-    height: 330px;
+    width: 1200px;
+    height: 200px;
     padding-top: 50px;
     margin: 25px 25px 25px 25px; 
 }
 
 .Video1 {
-    width: 1200px;
+    width: 1050px;
     margin: 50px 50px 50px 30px; 
     padding-top: 10px;
 }
 
 /*TituloQuienesSomos*/
-h1 {    
+h1.QS {    
+    margin-top: 10px;
     text-align: center;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 3em;
-    color: #70e8a6;
+    font-size: 4em;
+    color: white;
 }
 
 /*Caja1QuienesSomos*/
@@ -255,15 +230,10 @@ div#Texto1{
      width: 550px; 
      height: 250px;
      padding: 20px;
-     
-     box-sizing: border-box;
      color: white;
      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
      font-size: 14px;
      text-align: justify;
-     filter:alpha(opacity=20);
-     -moz-opacity:1;
-     opacity: 0.9;
 }
 
 /*Caja2QuienesSomos*/
@@ -278,6 +248,15 @@ div#Texto2{
     text-align: justify;
 }
 
+h2.Act{
+  
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 4em;
+    color: white;
+}
+
+
 .Texto3{
     padding: 20px;
     color: white;
@@ -287,8 +266,17 @@ div#Texto2{
     text-align: justify;
 }
 
+
+.carousel-item img.QM {
+    width: 500px;
+    height: 380px;
+}
+
+ .Container2{    
+     display: grid;
+ }
  
-div.carousel-inner2{
+#carousel-inner2{
 height: 250px;
 padding: 10px;
 transform: rotate (45deg);
@@ -302,6 +290,8 @@ div#Video {
 }
 
 /*CaracteristicasDelBloqueCabañas*/
+
+
 .h1cabañas{
     margin-top: 35px;
     margin-bottom: 20px;
@@ -312,8 +302,11 @@ div#Video {
 .fondo{
     background-image: url(../media/img/273057628.jpg);
     background-size: 100%;
+    background-repeat:round;
     text-align: auto;
+    
 }
+
 
 
 /*Caja1Cabañas*/
@@ -322,12 +315,9 @@ div#cabaña1{
     width: 550px; 
     height: 250px;
     padding: 20px;
-    background-image: linear-gradient(to left bottom, #8289bc, #4a80ab, #00758f, #00676a, #005644, #005438, #005229, #035018, #055f25, #066e33, #057e41, #008e50);
+    background-image: linear-gradient(to left top, #ff6e00, #df6303, #c05706, #a34c08, #86400a, #7f4505, #794801, #724c00, #766300, #707c00, #599600, #04b10b); opacity: 0.8;
     box-sizing: border-box;
-    border-radius: 35px 0px 35px 0px;
-   -moz-border-radius: 35px 0px 35px 0px;
-   -webkit-border-radius: 35px 0px 35px 0px;
-    border: 2px solid #12be77;
+    border: 2px solid;
     color: black;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 14px;
@@ -339,12 +329,9 @@ div.carousel-inner{
     width: 550px; 
     height: 250px;
     padding: 20px;
-    background-color: #bdb49d;
     box-sizing: border-box;
-    border-radius: 35px 0px 35px 0px;
-   -moz-border-radius: 35px 0px 35px 0px;
-   -webkit-border-radius: 35px 0px 35px 0px;
-    border: 2px solid #12be77;
+    border: 2px solid;
+    color: whitesmoke;
     text-align: justify;
     transform: rotate (45deg);
 
@@ -370,13 +357,10 @@ div#cabaña2{
     width: 550px; 
     height: 250px;
     padding: 20px;
-    background-image: linear-gradient(to left bottom, #8289bc, #4a80ab, #00758f, #00676a, #005644, #005438, #005229, #035018, #055f25, #066e33, #057e41, #008e50);
+    background-image: linear-gradient(to left top, #000000, #060505, #0c0a09, #110e0d, #141210, #241c11, #322611, #3e320f, #504d01, #576b00, #4d8d00, #04b10b);
     box-sizing: border-box;
-    border-radius: 35px 0px 35px 0px;
-   -moz-border-radius: 35px 0px 35px 0px;
-   -webkit-border-radius: 35px 0px 35px 0px;
-    border: 2px solid #12be77;
-    color: black;
+    border: 2px solid;
+    color: whitesmoke;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 14px;
     text-align: justify;}   
@@ -387,12 +371,7 @@ div#slidercabaña2{
     width: 550px; 
     height: 250px;
     padding: 20px;
-    background-color:#a3e4d7;
     box-sizing: border-box;
-    border-radius: 35px 0px 35px 0px;
-   -moz-border-radius: 35px 0px 35px 0px;
-   -webkit-border-radius: 35px 0px 35px 0px;
-    border: 2px solid #12be77;
     text-align: justify;}   
 
    div.slidercabaña2{
@@ -404,19 +383,17 @@ div#slidercabaña2{
     width: 100%;
 }
 
+
     /*Caja3Cabañas*/
 div#cabaña3{
     float: left;
     width: 550px; 
     height: 250px;
     padding: 20px;
-    background-image: linear-gradient(to left bottom, #8289bc, #4a80ab, #00758f, #00676a, #005644, #005438, #005229, #035018, #055f25, #066e33, #057e41, #008e50);
+    background-image: linear-gradient(to left top, #ff6e00, #df6303, #c05706, #a34c08, #86400a, #7f4505, #794801, #724c00, #766300, #707c00, #599600, #04b10b); opacity: 0.8;
     box-sizing: border-box;
-    border-radius: 35px 0px 35px 0px;
-   -moz-border-radius: 35px 0px 35px 0px;
-   -webkit-border-radius: 35px 0px 35px 0px;
-    border: 2px solid #12be77;
-    color: black;
+    border: 1px solid;
+    color: whitesmoke;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 14px;
     text-align: justify;}   
@@ -428,12 +405,7 @@ div#cabaña3{
     width: 550px; 
     height: 250px;
     padding: 20px;
-    background-color:#a3e4d7;
-    box-sizing: border-box;
-    border-radius: 35px 0px 35px 0px;
-   -moz-border-radius: 35px 0px 35px 0px;
-   -webkit-border-radius: 35px 0px 35px 0px;
-   border: 2px solid #12be77;}
+}
    
 div.slidercabaña3{
     width: 10px;
@@ -465,49 +437,6 @@ div.carousel-inner{
 }
 
 
-/* Estilo tabla que tan cerca estamos Inicio*/
-caption{
-        font-weight: bolder;
-    }
-table{
-    text-align: center;
-    border: 1px solid #434343;
-    width: 500px;
-    border-collapse: collapse;
-}
-table tr:hover{
-    background: #ccc;
-}
-table td:hover{
-    background: rgb(40, 190, 190);
-}
-
-td{
-    border:1px solid #434343;
-    padding:15px;
-}
-
-tbody tr:nth-child(odd) {
-    background-color: #bdd1c3;
-  }
-  tbody tr:nth-child(even) {
-    background-color: #939e94;
-  }
-  
-thead tr th {
-     padding:25px;
-     background-image: url(../media/img/arbol.jpg);
-  }
-
-tfoot {
-    font-weight: bolder;  
-    padding:25px;
-    background-image: url(../media/img/arbol.jpg);
-  }
-/* Estilo tabla que tan cerca estamos Cierre*/
-
-
-
 /* EstiloFooter*/
 .container{
     max-width: 1000px;
@@ -521,7 +450,7 @@ tfoot {
 
 .footer{
     width: 100%;
-    background-color: grey;
+    background-color: black;
     padding: 2rem 1rem;
    
    }
@@ -607,27 +536,33 @@ ul.redes{
 /*Se debe corregir el footer*/
 
 /*EstiloFormulariodeReservas*/
-#bg-image{
-    background-image: url(/media/img/El-Soberbio-Misiones-Argentina.jpg);    
+.TuReserva{
+    background-image:url(../media/img/reserva.jpg);
+    background-size: 100%;
+    background-repeat:round;
+    text-align: auto;
+
 }
 
+h1.Htr{
+    color: white;
+    text-align: center;
+
+}
 
 
 #Reserva{ 
     min-height: 100vh; 
-    font-size: 1.2em;
-    color:  ivory;   
+    font-size: 1.2em; 
 }
 
 #Reserva2{
       max-width: 240vh;
       height: 100vh;
-     
       font-size: 1.2em;
       font-weight: bold;
-    
+      color: white;  
       background-size: 100%;
-      
           
 }
 
@@ -661,224 +596,14 @@ ul.redes{
 }
 /*EstiloFormulariodeReservasCierre*/
 
+
 /*EstiloQueTanCercaEstamos*/
 #tabla .distancia{
    padding:0;
    margin: 0, auto;
  
-   }
-
-
-/*EliminacionEstilosHojaEco*/
-
-   h1{
-    text-align: center;
 }
 
-/*CajasEco*/
-div#Reciclaje{
-    width: 1160px;
-    height: 990px;
-    background: #12be77;
-    margin: 70px 100px;
-    padding: 30px;
-    border: 10px solid;
-    display: flex;
-    text-align: center;
-    position: relative;
-    font-size: 13px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
-    
-
-}
-div#Plan{
-    width: 200px;
-    height: 420px;
-    background: #2b6992;
-    position: absolute;
-    top: 80px;
-    bottom: 70px;
-    float: left;
-    padding: 10px;
-    text-align: center;
-
-}
-
-div#Aguas{
-    width: 200px;
-    height: 430px;
-    background: #db952b;
-    position: absolute;
-    display: inline-block;
-    top: 80px;;
-    bottom: 70px;
-    left:470px;
-    padding: 10px;
-    text-align: center;
-  
-
-}
-div#Reciclar{
-    width: 200px;
-    height: 430px;
-    background: #28ec16;
-    position: absolute;
-    top: 80px;
-    bottom: 70px;
-    left:690px;
-    padding: 10px;
-    text-align: center;   
-    display: inline-block
-
-}
-div#Limpieza{
-    width: 200px;
-    height: 430px;
-    background: #ffffff;
-    position: absolute;
-    top: 80px;;
-    left: 910px;   
-    display: inline-block;
-    padding: 10px;
-    text-align: center;
-
-}
-div#Respeto{
-    width: 200px;
-    height: 430px;
-    background: #5f6d67;
-    top: 520px;
-    display: inline-block;
-    position: absolute;
-    bottom: 80px;
-    padding: 10px;
-    text-align: center;
-
-}
-
-div#Fuego{
-    width: 200px;
-    height: 430px;
-    background: #e42222;
-    margin: 20px 50px;
-    top: 500px;
-    display: inline-block;
-    position: absolute;
-    left: 640px;
-    padding: 10px;
-    text-align: center;
-
-
-    
-}
-div#Agua{
-    width: 200px;
-    height: 430px;
-    background: #039c8f;
-    margin: 20px 50px;
-    top: 500px;
-    left: 200px;
-    display: inline-block;
-    position: absolute;
-    padding: 10px;
-    text-align: center;
-
-}
-div#Piscina{
-    width: 200px;
-    height: 430px;
-    background: #76f8ed;
-    margin: 20px 50px;
-    left: 420px;
-    top: 500px;
-    display: inline-block;
-    position: absolute;
-    padding: 10px;
-    text-align: center;
-    
-    
-
-}
-div#Diseño{
-    width: 200px;
-    height: 430px;
-    background: #f0f331;
-    margin: 20px 50px;  
-    position: absolute;
-    top: 60px;;
-    left: 200px;    
-    display: inline-block;
-    padding: 10px;
-    text-align: center;
-
-}
-div#Electrodomesticos{
-    width: 200px;
-    height: 430px;
-    background: #5f6d67;
-    margin: 20px 50px;
-    left: 860px;
-    top: 500px;
-    display: inline-block;
-    position: absolute;
-    padding: 10px;
-    text-align: center;
-
-}
-
-/*EstilosContacto*/
-#Contactos{
-    background: url(../media/img/ruta.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    font-size: 14px;
-    font-weight: bold;
-    color: #f1f52e ;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-#Contactos {
-    padding:0;
-    margin: 0, auto;
-    }
-
-    div#Ruta{
-        width: 900px;
-        height: 600px;
-        margin: 40px 180px;
-        padding: 30px;
-        display: inline-block;
-        position: relative;
-        font-size: 70px;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    }
-/*CierreEstilosContacto*/
-
-/*EstilosActividades*/
-#Actividades{
-    background: url(../media/img/selva2.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    font-size: 14px;
-    font-weight: bold;
-    color: #f1f52e ;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-#Jungla {
-    padding:0;
-    margin: 0, auto;
-    }
-
-    div#Jungla{
-        width: 900px;
-        height: 600px;
-        margin: 40px 180px;
-        padding: 30px;
-        display: inline-block;
-        position: relative;
-        font-size: 70px;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    }
 
     /*Responsive*/
 

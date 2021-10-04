@@ -161,6 +161,9 @@ header {
     width: 60px; }
 
 /* PAGES */
+body.Fondo__Eco {
+  background-image: linear-gradient(to right bottom, #eed1d1, #f9d1c9, #ffd3be, #ffd7b2, #fbdda8, #eee0a6, #e0e3a7, #d1e5aa, #c2e1b2, #b8ddba, #b1d7bf, #aed1c3); }
+
 .titulo__eco {
   color: #1B4D3E;
   text-align: center;
