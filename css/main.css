@@ -41,7 +41,7 @@
     }
     .Navegacion .logo img {
         max-width: 100%;
-        max-height: 170px;
+        max-height: 60px;
     }
 
     .Navegacion .Menu{
@@ -115,6 +115,7 @@
     body.julio{
      
         min-height: 150vh;
+        background-color: black;
           
     }
 
@@ -272,7 +273,7 @@ h2.Act{
     height: 380px;
 }
 
- .Container2{    
+.Container2{    
      display: grid;
  }
  
@@ -292,14 +293,15 @@ div#Video {
 /*CaracteristicasDelBloqueCabañas*/
 
 
-.h1cabañas{
+.h1Cabañas{
     margin-top: 35px;
     margin-bottom: 20px;
     font-size: 5em;
-    color: rgb(202, 122, 17);
+    color: white;
+    text-align: center;
 }
 
-.fondo{
+.Fondo{
     background-image: url(../media/img/273057628.jpg);
     background-size: 100%;
     background-repeat:round;
@@ -334,7 +336,6 @@ div.carousel-inner{
     color: whitesmoke;
     text-align: justify;
     transform: rotate (45deg);
-
 }   
 
 
@@ -348,8 +349,6 @@ img{
     float: left;
     margin-left: 40px;
 }
-
-
     
    /*Caja2Cabañas*/
 div#cabaña2{
