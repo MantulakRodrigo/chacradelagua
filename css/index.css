@@ -4,6 +4,10 @@
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   src: local("Roboto"), local("Roboto"), url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Roboto:wght@300&display=swap"); }
 
+@font-face {
+  font-family: Didot;
+  src: url("https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap"); }
+
 /*COLORS*/
 /*SPACING*/
 /*BORDER*/
@@ -38,20 +42,21 @@ li a {
 /*Header*/
 header {
   width: 80% height auto;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+  font-family: Didot; }
 
 .navbar {
   display: flex;
   font-size: 0;
-  padding: 1rem 3rem; }
+  padding: 1rem 3rem;
+  background-color: #000000; }
   .navbar__logo {
-    max-height: 20px;
-    display: inline-block;
     width: 20%;
-    padding: 2rem 0; }
-  .navbar__logo__img {
-    max-width: 100%;
-    max-height: 170px; }
+    padding: 1rem 0;
+    display: inline-block; }
+  .navbar__logo img {
+    width: 30%;
+    max-height: 70px;
+    display: inline-block; }
 
 .navbar__menu {
   height: 100%;
@@ -68,15 +73,15 @@ header {
     color: gold; }
   .navbar__menu a {
     display: block;
-    color: #48C9B0;
-    font-size: .8rem;
+    color: #ac851b;
+    font-size: .9rem;
     transition: ease 0.3s;
     padding: 1rem 1.5rem;
     border-radius: 1rem;
     background-color: #2b2b2b; }
 
 .navbar__menu__item__submenu {
-  color: #91aaee;
+  color: #ac851b;
   display: none;
   font-size: 12px;
   position: absolute;
@@ -89,28 +94,68 @@ header {
 
 .navbar__menu__item__submenu__item:hover > a {
   background-color: #1B4D3E;
-  color: cornflowerblue;
+  color: gold;
   display: block;
   padding: 1rem 1.5rem;
   width: 100%;
-  color: #48C9B0;
   border-radius: 0.9rem; }
 
 .navbar__menu__item__submenu__item > a {
   display: block;
   padding: 1rem 1.5rem;
   width: 100%;
-  color: #48C9B0;
-  border-radius: 0.9rem; }
+  color: #ac851b;
+  border-radius: 0.9rem;
+  background-color: none; }
 
-.navbar .navbar__menu > .navbar__menu__item__submenu > .navbar__menu__item__submenu__item > li:hover > a {
-  background-color: #1B4D3E;
+.navbar__menu > .navbar__menu__item__submenu__item > li:hover > a {
   color: cornflowerblue; }
+
+@media (max-width: 1000px) {
+  .navbar__menu {
+    width: 100%;
+    display: grid; } }
+
+@media (max-width: 1000px) {
+  .navbar__menu > li > a {
+    width: 70%;
+    font-size: 10px;
+    display: grid;
+    margin: 0.6rem 0.8rem; } }
+
+@media (max-width: 1000px) {
+  .navbar__menu > li .navbar__menu__item__submenu > li > a {
+    width: 100%;
+    font-size: 7px;
+    height: auto; } }
+
+@media (max-width: 574px) {
+  .Navegacion {
+    width: 100%;
+    margin-bottom: 30px; } }
+
+@media (max-width: 360px) {
+  .Navegacion .Menu {
+    width: 100%;
+    font-size: 3px;
+    display: grid; } }
+
+@media (max-width: 360px) {
+  .Navegacion .Menu > li > a {
+    width: 100%;
+    font-size: 8px;
+    display: grid; } }
+
+@media (max-width: 360px) {
+  .Navegacion .Menu > li .Submenu {
+    width: 100%;
+    font-size: 5px;
+    height: auto; } }
 
 /* EstiloFooter*/
 .footer {
   width: 100%;
-  background-color: grey;
+  background-color: #000000;
   padding: 2rem 1rem; }
   .footer__contenedor {
     max-width: 1000px;
@@ -128,7 +173,7 @@ header {
           text-transform: capitalize;
           margin-bottom: 10px;
           font-weight: 200;
-          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          font-family: Didot;
           position: relative; }
 
 .footer__contenedor__columna__uno__redes__a {
@@ -148,32 +193,32 @@ header {
   display: inline-block;
   height: 40px;
   width: 40px;
-  background-color: #2b2b2b;
+  background-color: #000000;
   margin: 0 10px;
   text-align: center;
   line-height: 40px;
   border-radius: 50%;
   transition: background-color  .5s; }
   .footer__contenedor__columna__uno__redes__b a {
-    color: #24262b;
+    color: #000000;
     background-color: lavender; }
-  .footer__contenedor__columna__uno__redes__b a:hover {
-    width: 60px; }
 
 /* PAGES */
 body.Fondo__Eco {
-  background-image: linear-gradient(to right bottom, #eed1d1, #f9d1c9, #ffd3be, #ffd7b2, #fbdda8, #eee0a6, #e0e3a7, #d1e5aa, #c2e1b2, #b8ddba, #b1d7bf, #aed1c3); }
+  background-image: radial-gradient(circle, #0b0d0b, #090c09, #080c08, #060b06, #040a04, #050902, #050701, #060600, #070400, #060200, #030101, #000000);
+  opacity: 0.9; }
 
 .titulo__eco {
-  color: #1B4D3E;
+  color: honeydew;
   text-align: center;
-  font-size: 4rem; }
+  font-size: 2.3em;
+  font-family: Didot; }
 
 /*CajasEco*/
 #reciclaje {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  width: 1160px;
-  height: 1000px;
+  font-family: Didot;
+  width: 90%;
+  height: 90%;
   background: #1B4D3E;
   padding: 30px;
   border: 0.5rem solid;
@@ -181,14 +226,13 @@ body.Fondo__Eco {
   margin-left: auto;
   margin-right: auto; }
   #reciclaje {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr); }
+    display: inline-flexbox; }
   #reciclaje #reciclaje__plan {
     background-color: #000000;
     color: seashell; }
   #reciclaje__plan {
-    width: 200px;
-    height: 420px;
+    width: 100%;
+    height: 75%;
     padding: 40px;
     display: inline-block;
     text-align: center; }
@@ -200,3 +244,21 @@ body.Fondo__Eco {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       font-size: small;
       text-align: start; }
+
+@media (max-width: 1030px) {
+  #PrincipalP {
+    font-size: 0.8rem; } }
+
+@media (max-width: 780px) {
+  #PrincipalP {
+    font-size: 0.6rem; } }
+
+@media (max-width: 260px) {
+  #PrincipalP {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat 3, 40rem; } }
+
+@media (max-width: 100px) {
+  #PrincipalP .Uno {
+    grid-column: 1fr;
+    flex-direction: repeat 3, 40rem; } }

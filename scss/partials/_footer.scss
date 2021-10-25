@@ -2,7 +2,7 @@
 
 .footer{
     width: 100%;
-    background-color: grey;
+    background-color:$black;
     padding: 2rem 1rem;
         &__contenedor{
             max-width: 1000px;
@@ -20,7 +20,7 @@
                                 text-transform: capitalize;
                                 margin-bottom: 10px;
                                 font-weight: 200;
-                                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                                font-family: Didot;
                                 position: relative;
                                     
 
@@ -54,18 +54,16 @@
     display: inline-block;
     height: 40px;
     width: 40px;
-    background-color: $primary;
+    background-color: $black;
     margin: 0 10px;
     text-align: center;
     line-height: 40px;
     border-radius: 50%;
     transition: background-color  .5s ;
         &{
-            color: #24262b;
+            color: $black;
             background-color:lavender;
     
         }
-            &:hover{       
-                width: 60px ;
-            }
+        
 }

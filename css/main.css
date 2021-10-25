@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap');
 
 /* Estilo del menu Inicio */
     *{
@@ -10,12 +11,14 @@
 
     html{
         font-size: 62.5%;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: Didot;
     }
 
     ul, ol {
         list-style-type: none;
         padding: 0;
+        margin: 0;
+        
     }
     a {
         text-decoration: none; 
@@ -26,22 +29,25 @@
     }
     /*Header*/
     header{
-        width: 100%;
-        height: auto;
+        width: 100%;  
     }
+
     .Navegacion {
         font-size: 0;
-        padding: 1rem 3rem;
+        padding: 1rem 5rem;
         background-color: black;
+        font-family: Didot;
     }
     .Navegacion .logo{
-        display: inline-block;
         width: 20%;
-        padding: 2rem 0; 
+        padding: 1rem 0; 
+        display: inline-block;
     }
+
     .Navegacion .logo img {
-        max-width: 100%;
-        max-height: 60px;
+        width: 30%;
+        max-height: 70px;
+        display: inline-block;
     }
 
     .Navegacion .Menu{
@@ -50,6 +56,7 @@
         width: 80%;
         display: inline-block;
         text-align: center;
+        padding: 1rem 0;
     }
 
     .Navegacion .Menu >li{
@@ -60,24 +67,21 @@
 
      .Navegacion .Menu > li > a{
          display: block;
-         color: #48C9B0;
+         color:#ac851b;
          font-size: 1.4rem;
          transition: ease 0.3s;
          padding: 1rem 1.5rem;
          border-radius: 1rem;
-         background-color: #2b2b2b;
-         
+         background-color: #2b2b2b;    
      }
 
      .Navegacion .Menu > li:hover > a{
       background-color: #1B4D3E;    
       color: gold;
-      
     }
 
-
     .Navegacion .Menu .Submenu{         
-        color: rgb(145, 170, 238);
+        color:#ac851b;;
         display: none;
         font-size: 12px;
         position: absolute;
@@ -97,16 +101,79 @@
         display: block;
         padding: 1rem 1.5rem;
         width: 100%;
-        color:#48C9B0;
+        color:#ac851b;
         border-radius: 0.9rem;
-
-    }
+        background-color:#1B4D3E;  
+        }
         
     .Navegacion .Menu > li > .Submenu >li:hover >a {
        background-color: #1B4D3E;
-       color: cornflowerblue;
+       color: gold;
     }
-         
+
+
+    @media (max-width: 860px){
+        .Navegacion .Menu{
+            width: 100%;
+            display: grid;
+        }
+    }
+
+    @media (max-width: 860px){
+        .Navegacion .Menu >li >a{
+            width:  70%;
+            font-size: 10px; 
+            display: grid;
+            margin: 1rem 0.8rem;
+
+        }   
+    }
+
+    @media (max-width: 860px){
+        .Navegacion .Menu >li .Submenu {
+            width: 50%;
+            font-size: 9px; 
+            height: auto;
+
+        }
+    }
+
+
+    
+    @media (max-width: 574px){
+        .Navegacion{
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+
+    @media (max-width: 360px){
+        .Navegacion .Menu{
+            width: 100%;
+            font-size: 3px; 
+            display: grid;
+
+        }
+    }
+    @media (max-width: 360px){
+        .Navegacion .Menu >li >a{
+            width: 100%;
+            font-size: 8px; 
+            display: grid;
+
+        }
+        
+    }
+
+    @media (max-width: 360px){
+        .Navegacion .Menu >li .Submenu {
+            width: 50%;
+            font-size: 5px; 
+            height: auto;
+
+        }
+    }
+        
      /* Estilo del menu cierre */
 
 
@@ -114,31 +181,24 @@
     
     body.julio{
      
-        min-height: 150vh;
-        background-color: black;
-          
+        min-height: 70vh;
+        background-image: radial-gradient(circle, #0b0d0b, #090c09, #080c08, #060b06, #040a04, #050902, #050701, #060600, #070400, #060200, #030101, #000000);
     }
 
     .bg-2{
         background: inherit;
+        font-family: "Didot";
+        font-size: 105px;
+      font-style: normal;
+        color: #ac851b;
+        -webkit-text-stroke: 2px black;
       }
-    
-    .t-stroke-shadow {
-        font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
-        font-size: 50px;
-        padding: 80px 50px;
-        text-align: center;
-        text-transform: uppercase;
-        text-rendering: optimizeLegibility;
-        color: #1B4D3E;
-        text-shadow: -2px 2px #ffffff, -2px -2px #ffffff, 2px -2px #ffffff, 2px 2px #f3f3f2, 5px 5px #324b49;
-    }
-    
+
     #PrincipalP.Portada{
         height: 900px;
         max-width: 1280px;
         margin: 0 auto;
-        background-image: radial-gradient(circle, #2d302d, #292b28, #262623, #22221f, #1e1d1b, #1b1a18, #181715, #141312, #100f0f, #0c0b0a, #060505, #000000);
+        background-image: radial-gradient(circle, #0b0d0b, #090c09, #080c08, #060b06, #040a04, #050902, #050701, #060600, #070400, #060200, #030101, #000000);
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 4fr;
@@ -182,78 +242,72 @@
         background-image: url("../media/img/moconaperfil.jpg");
         background-size: cover;
 
-    }
-    
-    @media screen  and (max-width){}
-        
+    }     
   
 
 /*CaracteristicasGeneralesDeQuienesSomos*/
+.Contenedor1{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    
+}
 
 body.Misiones{
-    
     box-sizing: border-box;
     background-image: radial-gradient(circle, #2d302d, #292b28, #262623, #22221f, #1e1d1b, #1b1a18, #181715, #141312, #100f0f, #0c0b0a, #060505, #000000);
     background-repeat: none;
-   
 }
 
 .Gral{
     display: flex;
-    display: inline-block;
 }
 
-div#General{
-    width: 1200px;
-    height: 200px;
-    padding-top: 50px;
-    margin: 25px 25px 25px 25px; 
+#General{
+    width: 100%;
 }
 
-.Video1 {
-    width: 1050px;
-    margin: 50px 50px 50px 30px; 
-    padding-top: 10px;
-}
 
 /*TituloQuienesSomos*/
 h1.QS {    
     margin-top: 10px;
     text-align: center;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 4em;
+    font-family: Didot;
+    font-size: 2.4em;
     color: white;
 }
 
 /*Caja1QuienesSomos*/
 div#Texto1{
      float: left;
-     width: 550px; 
-     height: 250px;
+     width: 40%; 
+     height: 25%;
      padding: 20px;
      color: white;
-     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     font-family: Didot;
      font-size: 14px;
      text-align: justify;
+     margin: auto;
 }
 
 /*Caja2QuienesSomos*/
 div#Texto2{
     float: right;
-    width: 550px; 
-    height: 250px;
+    width: 40%; 
+    height: 25%;
     padding: 20px;
     color: white;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Didot;
     font-size: 14px;
     text-align: justify;
+    margin: auto;
 }
 
 h2.Act{
   
     text-align: center;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 4em;
+    font-family: Didot;
+    font-size: 2.4em;
     color: white;
 }
 
@@ -265,8 +319,8 @@ h2.Act{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 14px;
     text-align: justify;
+    margin: auto;
 }
-
 
 .carousel-item img.QM {
     width: 500px;
@@ -290,151 +344,53 @@ div#Video {
     text-align: center;
 }
 
+
 /*CaracteristicasDelBloqueCabañas*/
 
+.row > div{
+    background: black;
+  }
+  
+  
+  /* Screen larger than 600px? 2 column */
+  @media (min-width: 600px) {
+    .cards { grid-template-columns: repeat(2, 1fr); }
+  }
+  
+  /* Screen larger than 900px? 3 columns */
+  @media (min-width: 900px) {
+    .cards { grid-template-columns: repeat(3, 1fr); }
+  }
 
-.h1Cabañas{
-    margin-top: 35px;
-    margin-bottom: 20px;
-    font-size: 5em;
-    color: white;
-    text-align: center;
-}
 
 .Fondo{
     background-image: url(../media/img/273057628.jpg);
     background-size: 100%;
-    background-repeat:round;
-    text-align: auto;
-    
+    background-repeat:repeat-y;
+    width: 100%;
 }
 
+.Cabañas {
+    font-size: .7em;
+    text-align: center;
+    font-family: Didot;
+    color:honeydew;
+}
 
+.Cabañas2{
+    padding-top: 3px;
+    font-family: Didot;
+    text-align: center;
+    color:#ac851b;
+    font-size: 25px;
+}
 
-/*Caja1Cabañas*/
-div#cabaña1{
-    float: left;
-    width: 550px; 
-    height: 250px;
-    padding: 20px;
-    background-image: linear-gradient(to left top, #ff6e00, #df6303, #c05706, #a34c08, #86400a, #7f4505, #794801, #724c00, #766300, #707c00, #599600, #04b10b); opacity: 0.8;
-    box-sizing: border-box;
-    border: 2px solid;
-    color: black;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 14px;
-    text-align: justify;}
-   
-/*Caja1Cabañas*/
-div.carousel-inner{
-    float: right;
-    width: 550px; 
-    height: 250px;
-    padding: 20px;
-    box-sizing: border-box;
-    border: 2px solid;
-    color: whitesmoke;
+.row > div > p{
+    font-size: 17px;
+    font-family: Didot;
+    color:honeydew;
     text-align: justify;
-    transform: rotate (45deg);
-}   
-
-
-img{
-    width: 100px;
-    height: 200px;
 }
-
-
-#carousel-inner{
-    float: left;
-    margin-left: 40px;
-}
-    
-   /*Caja2Cabañas*/
-div#cabaña2{
-    float: left;
-    width: 550px; 
-    height: 250px;
-    padding: 20px;
-    background-image: linear-gradient(to left top, #000000, #060505, #0c0a09, #110e0d, #141210, #241c11, #322611, #3e320f, #504d01, #576b00, #4d8d00, #04b10b);
-    box-sizing: border-box;
-    border: 2px solid;
-    color: whitesmoke;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 14px;
-    text-align: justify;}   
-
-   /*Caja2Cabañas*/
-div#slidercabaña2{
-    float: left;
-    width: 550px; 
-    height: 250px;
-    padding: 20px;
-    box-sizing: border-box;
-    text-align: justify;}   
-
-   div.slidercabaña2{
-    width: 10px;
-    margin: auto;
-}
-
-.slidercabaña2 img {
-    width: 100%;
-}
-
-
-    /*Caja3Cabañas*/
-div#cabaña3{
-    float: left;
-    width: 550px; 
-    height: 250px;
-    padding: 20px;
-    background-image: linear-gradient(to left top, #ff6e00, #df6303, #c05706, #a34c08, #86400a, #7f4505, #794801, #724c00, #766300, #707c00, #599600, #04b10b); opacity: 0.8;
-    box-sizing: border-box;
-    border: 1px solid;
-    color: whitesmoke;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 14px;
-    text-align: justify;}   
-
-
-   /*Caja3Cabañas*/
-   div#slidercabaña3{
-    float: right;
-    width: 550px; 
-    height: 250px;
-    padding: 20px;
-}
-   
-div.slidercabaña3{
-    width: 10px;
-    margin: auto;
-}
-div.slidercabaña3 ul {
-    width: 10x;
-    display: flex;
-    padding: 0;
-    animation: cambio 20s infinite alternate;
-    animation-timing-function: ease-in;
-}
-
-.slidercabaña3 li {
-    width: 60%;
-    list-style: none;
-}
-.slidercabaña3 img {
-    width: 100%;
-}
-
-div.carousel-inner{
-    float: inherit;
-}
-
-.footer-col{
-    width: 50%;
-    margin: auto;
-}
-
 
 /* EstiloFooter*/
 .container{
@@ -464,7 +420,7 @@ div.carousel-inner{
     text-transform: capitalize;
     margin-bottom: 10px;
     font-weight: 200;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Didot;
     position: relative;
   
 }
@@ -510,8 +466,6 @@ ul.redes{
     transition: all 0.5s ease;
 }
 
-
- /*ColoresDeRedesSociales*/
 .footer-col .redes-sociales a
 {
     color: #24262b;
@@ -532,7 +486,6 @@ ul.redes{
         margin-bottom: 30px;
     }
 }
-/*Se debe corregir el footer*/
 
 /*EstiloFormulariodeReservas*/
 .TuReserva{
@@ -540,13 +493,12 @@ ul.redes{
     background-size: 100%;
     background-repeat:round;
     text-align: auto;
-
 }
 
-h1.Htr{
-    color: white;
+.Htr{
     text-align: center;
-
+    font-family: Didot;
+    color:honeydew;
 }
 
 
@@ -596,42 +548,72 @@ h1.Htr{
 /*EstiloFormulariodeReservasCierre*/
 
 
-/*EstiloQueTanCercaEstamos*/
-#tabla .distancia{
-   padding:0;
-   margin: 0, auto;
- 
+/*Elviaje*/
+.Embed-container{
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    padding-top: 10px;
+}
+
+ .Embed-container iframe {
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }    
+
+
+
+
+/*Responsive*/
+
+
+
+
+
+ @media (max-width: 1030px){
+        #jujuy{
+     font-size:  0.8rem; 
+ }
+}
+
+@media  (max-width: 780px)
+ {
+ #jujuy{
+     font-size: 0.6rem; 
+ }  
+}
+
+@media (max-width: 260px){
+ #jujuy{
+     grid-template-columns: 1fr; 
+     grid-template-rows: repeat (3, 40rem);
+ }
+}
+
+@media (max-width: 100px){
+ #PrincipalP .Uno{
+     grid-column: 1fr;
+     flex-direction: repeat (3, 40rem);
+ }
 }
 
 
-    /*Responsive*/
 
-   @media (max-width: 1030px){
-               #PrincipalP{
-            font-size:  0.8rem; 
-        }
-    }
 
-    @media  (max-width: 780px)
-        {
-        #PrincipalP{
-            font-size:  0.6rem; 
-        }  
-      }
 
-    @media (max-width: 260px){
-        #PrincipalP{
-            grid-template-columns: 1fr; 
-            grid-template-rows: repeat (3, 40rem);
-        }
-    }
 
-    @media (max-width: 100px){
-        #PrincipalP .Uno{
-            grid-column: 1fr;
-            flex-direction: repeat (3, 40rem);
-        }
-    }
+
+
+
+
+
+
+
+
 
 
     /*ERROR404 ESTILOS*/
